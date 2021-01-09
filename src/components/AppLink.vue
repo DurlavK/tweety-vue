@@ -1,11 +1,11 @@
 <template>
-  <div class="w-full flex flex-row justify-between">
 
-    <div class="link-panel flex flex-col lg:w-1/6">
-      <div class="ml-20 mt-5">
+  <div class="wflex flex-col">
+      <div class="mt-5">
         <img src="../assets/logo.png" alt="" class="" height="50" width="50">
       </div>
-      <div class="ml-20 mt-5 flex flex-col align-center">
+
+      <div class="mt-5 flex flex-col align-center">
         <router-link 
         v-for="item in list"
         :key="item.to"
@@ -16,10 +16,11 @@
         {{item.title}}
         </router-link>
       </div>
-      <div class="mx-10 mt-5 flex bg-blue-400 px-5 py-2 rounded-3xl text-white text-center w-40">
-        Tweet
+
+      <div class="mt-5 flex bg-blue-400 px-5 py-2 rounded-3xl text-white justify-center w-40">
+        <p>Tweet</p>
       </div>
-      <div class="ml-20 mt-20 flex align-center">
+      <div class="mt-20 flex align-center">
         <img src="../assets/logo.png" alt="" class="rounded-lg" height="30" width="30">
         <div class="ml-5">
           <p>Test User</p>
@@ -29,7 +30,8 @@
       </div>
 
     </div>
-  </div>
+
+
 </template>
 
 <script>
